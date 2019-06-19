@@ -16,6 +16,9 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
+	lintOptions {
+        abortOnError false
+    }
     compileSdkVersion safeExtGet('compileSdkVersion', 28)
 
     defaultConfig {
